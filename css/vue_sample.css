@@ -1,0 +1,56 @@
+[v-cloak]{
+    display: none;
+
+}
+
+body{
+ font-size: 16px;   
+ font-family: Verdana, sans-serif;
+ background: linear-gradient(to bottom right ,#eef,#efe);
+}
+
+input{
+margin: 10px 0;
+}
+
+.container{
+ width:300px;
+ margin:   auto;
+}
+
+#app h4{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#app li{
+    line-height: 2;
+}
+
+#app input[type="text"]{
+    padding: 5px;
+}
+
+.notification{
+    background: #09e;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+}
+
+.table{
+    border: 1px solid #888;
+    border-collapse: collapse;
+}
+.table th,
+.table td{
+    border :1px solid #888;
+    padding: .5em;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+}

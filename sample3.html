@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue の勉強3回目 v-if v-show</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vue_sample.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h3>Vue Sample3</h3>
+        <h4>v-if</h4>
+
+        <p>個数を入力してね</p>
+        <input type="text" v-model="count">
+
+        <p class="notification" v-if="count>0">{{ count }} 個あります。</p>
+        <p v-else>ないで！！</p>
+
+        <h4>v-if 文字列判定</h4>
+        <p>male female transgen</p>
+        <input type="text" v-model="sex">
+        <p v-if="sex==='male'">男だ</p>
+        <p v-if="sex==='female'">女よ</p>
+        <p v-if="sex==='transgen'">分からん</p>
+
+        <h4>v-show</h4>
+        <p>v-if と大して変わらない</p>
+        <input type="text" v-model="signal">
+        <p style="background:#faa;" v-show="signal==1">赤</p>
+        <p style="background: #aaf;" v-show="signal==2">青</p>
+        <p style="background: #ffa;" v-show="signal==3">黄</p>
+
+
+        <p>Vue version: {{ Vue.version }}</p>
+    </div>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/vue_sample3.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue の勉強4回目 v-for</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vue_sample.css">
+</head>
+
+<body>
+    <div v-cloak id="app" class="container">
+        <h3>Vue Sample4</h3>
+        <h4>v-for</h4>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>名前</td>
+                    <td>特徴</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="idol in idols">
+                    <td>{{ idol.name }}</td>
+                    <td>{{ idol.char }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Vue version: {{ Vue.version }}</p>
+    </div>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/vue_sample4.js"></script>
+
+</body>
+
+</html>
